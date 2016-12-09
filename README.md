@@ -376,6 +376,7 @@ Uruchomianie kontenera korzystając z rejestru
 docker run -d -p 80:80 <URL rejestru>/demo/own-iis:latest
 ```
 
+[Strona do podglądu ACR](https://acrwebmanagerdemo.azurewebsites.net/)
 
 ##VSTS
 **VM: Docker01**
@@ -408,7 +409,7 @@ Nowy build definition ASP.NET Build (PREVIEW)
 
 **Build solution** ->
 **MSBuild Arguments:** 
-/p:DeployOnBuild=True /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem  /p:DeleteExistingFiles=True  /p:publishUrl="$(build.artifactstagingdirectory)\\"
+/p:DeployOnBuild=True /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem  /p:DeleteExistingFiles=True  /p:publishUrl="$(build.artifactstagingdirectory)\\\\”
 
 Wykonaj build
 
